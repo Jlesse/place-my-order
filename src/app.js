@@ -4,7 +4,7 @@ import 'can/map/define/';
 import 'can/route/pushstate/';
 
 const AppViewModel = AppMap.extend({
-  // define: {
+  define: {
   //   message: {
   //     value: 'Hello World!',
   //     serialize: false
@@ -13,7 +13,7 @@ const AppViewModel = AppMap.extend({
       value: 'place-my-order',
       serialize: false
     }
-  //}
+  }
 });
 
 can.route(":page", {page: "home"});
